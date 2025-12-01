@@ -1,0 +1,156 @@
+1) Requisitos têm papel central no desenvolvimento de software. De que maneira os 
+requisitos influenciam outras atividades do processo de software? 
+
+
+R:
+Os requisitos definidos na fase de levantamento são fundamentais para todo o desenvolvimento do sistema. Eles servem de base para a análise, orientam o projeto e a implementação, ajudam na criação dos testes, na validação do produto e também na manutenção futura.
+
+ex: Se o requisito diz que o sistema deve permitir login com CPF e senha, esse ponto guiará o design da tela de login, a programação da autenticação e os testes de acesso.
+
+
+
+2) Descreva o processo de Engenharia de Requisitos, apontando suas principais 
+atividades e o propósito de cada uma delas. 
+
+
+ Os processos usados para a engenharia de requisitos variam muito,
+ dependendo do domínio da aplicação, das pessoas envolvidas e da organização
+ que desenvolve os requisitos.
+
+ . Elicitação de requisitos;
+
+Propósito: Descobrir o que os usuários e o cliente esperam do sistema.
+
+Atividades típicas: Entrevistas, questionários, observação, reuniões e análise de documentos.
+
+Exemplo: Identificar que o usuário deseja consultar vendas por período e emitir relatórios em PDF.
+
+
+
+ . Análise de requisitos;
+
+Propósito: Entender, refinar e resolver conflitos entre requisitos levantados.
+
+Atividades típicas: Classificar requisitos (funcionais e não funcionais), priorizar e ajustar conforme restrições técnicas e de negócio.
+
+Exemplo: Decidir entre gerar relatórios em tempo real (mais caro) ou apenas sob demanda (mais viável).
+
+
+
+ . Validação de requisitos;
+
+Propósito: Garantir que os requisitos definidos sejam corretos, completos e realmente representem o que o cliente deseja.
+
+Atividades típicas: Revisões, protótipos, reuniões de validação e simulações.
+
+Exemplo: Apresentar um protótipo de tela para o cliente confirmar se está de acordo com suas expectativas.
+
+
+
+ . Gerenciamento de requisitos.
+
+Propósito: Controlar mudanças, rastrear requisitos e manter a consistência durante todo o ciclo de vida do projeto.
+
+Atividades típicas: Controle de versão, rastreabilidade e atualização de requisitos conforme o projeto evolui.
+
+Exemplo: Atualizar o documento de requisitos após uma mudança solicitada pelo cliente.
+
+
+ • Na prática, engenharia de requisitos é uma atividade iterativa em que estes
+ processos são intercalados.
+
+
+
+
+3) Diferencie requisitos de usuário de requisitos de sistema. Como tratar a documentação de requisitos nesses dois diferentes níveis? Qual o público alvo dessa 
+documentação? Por que é importante prover modelos de documentos para documentos de requisitos? 
+
+
+
+Clientes, usuários finais e desenvolvedores são todos interessados em requisitos, mas têm expectativas diferentes. 
+Enquanto desenvolvedores e usuários finais têm interesse em detalhes técnicos, clientes requerem descrições mais abstratas. Assim, é útil 
+apresentar requisitos em diferentes níveis de descrição. 
+
+ 
+• Requisitos de Cliente ou de Usuário: são declarações em linguagem 
+natural acompanhadas de diagramas intuitivos de quais serviços são esperados 
+do sistema e das restrições sob as quais ele deve operar. Devem estar em um 
+nível de abstração mais alto, de modo que sejam compreensíveis pelos clientes 
+e usuários do sistema que não possuem conhecimento técnico.  
+
+
+• Requisitos de Sistema: definem detalhadamente as funções, serviços e 
+restrições do sistema. São versões expandidas dos requisitos de cliente usados 
+pelos desenvolvedores para projetar, implementar e testar o sistema. Como 
+requisitos de sistema são mais detalhados, as especificações em linguagem 
+natural são insuficientes e para especificá-los, notações mais especializadas 
+devem ser utilizadas.  
+
+Fornecer modelos de documentos de requisitos ajuda a assegurar consistência, comunicação eficiente e qualidade no processo de Engenharia de Requisitos.
+Isso ajuda a reduzir falhas de entendimento e retrabalho no desenvolvimento do sistema.
+
+
+
+ EXERCICIO 4 
+
+REQUISITOS FUNCIONAIS: 
+
+RF01 - Agendar atendimento — o sistema deve permitir o agendamento de atendimentos, 
+vinculando cliente, data, hora e serviços desejados. 
+
+DEPENDE DE: 
+RF02 - cadastrar clientes 
+
+
+
+RF02 - Cadastrar clientes — o sistema deve permitir o cadastro de clientes com nome, sexo, telefone e endereço.
+
+RF03 - Cadastrar funcionário — o sistema deve permitir o cadastro de funcionários com nome e telefones de contato.
+
+
+RF04 - Agendamento online — permitir que clientes realizem agendamentos pela Web. 
+
+DEPENDE DE:
+RF01 - Agendar atendimento
+RF02 - Cadastrar cliente
+
+
+
+RF05 - Emitir comprovante — gerar comprovante de pagamento para o cliente.
+DEPENDE DE: 
+RF01 - Agendar atendimento 
+
+--//-- 
+
+
+>>REGRA DE NEGÓCIO:<<
+
+RN1 - O comprovante de pagamento só pode ser emitido após a confirmação do pagamento dos serviços realizados.
+DEPENDE DE: 
+RF05 - Emitir comprovante
+
+
+RN2 - O agendamento online só pode ser concluído se o cliente informar todos os dados obrigatórios (nome, telefone, serviços desejados e data). 
+DEPENDE DE: 
+RF04 - Agendar online
+
+RN3 - O cliente pode cancelar ou alterar o agendamento até antes do horário marcado.
+DEPENDE DE:
+RF01 - Agendar atendimento 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+body {
+    --preto: #5e596b;
+    --azul-Marinho: #09b4f1;
+    --azul: #c2e1e696;
+    margin: 0;
+    background-color: #0B0C10!important;
+}
+
+nav .navbar-brand, nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+nav .nav-link:hover {
+    color: var(--azul);
+    border-bottom: 1px solid var(--azul);
+}
+
+nav .container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .banner_sobre {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 10, 10, 0.9)),
+    url("../img/psycho.jpg") center/cover no-repeat;
+  min-height: 60vh;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.banner_sobre h1{
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+}
+
+main .banner {
+    background-image: url(../img/header_myers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+main .banner h1, main .titulo {
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    background-color: #0B0C10;
+}
+
+main .container-eventos {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(69, 162, 158, 0.2);
+}
+main .img-evento {
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+main .card {
+    padding: 30px;
+    border-radius: 12px;
+}
+
+main .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+#container_formulario {
+    border-radius: 10px;
+}
+#container_titulo {
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 10px 10px 0 0;
+}
+
+@media screen and (max-width: 575px) {
+    #container_formulario {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .banner {
+        background-size: 100%;
+        background-attachment: scroll;
+        height: 250px;
+    }
+
+    main .banner-2 {
+        display: none;
+    }
+}
+
+p {
+  color: #DADADA; /* cinza claro */
+  font-size: 12pt;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-favorito {
+    background-color: transparent;
+    border: 1px solid #fffefe; 
+    color: #c5c219;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+
+
+
+
